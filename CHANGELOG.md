@@ -7,12 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.1.1] - 2025-01-30
+
+### Changed
+
+- application name PostgreSQL database connection now includes PM2 instance number
+
 ## [6.1.0] - 2025-01-09
 
 ### Changed
 
-  - Optimized `/accounts/:stake_address/addresses` query performance
-  - Requires new index: `bf_idx_tx_out_sa_paycred_script_id` (see README)
+- Optimized `/accounts/:stake_address/addresses` query performance
+- Requires new index: `bf_idx_tx_out_sa_paycred_script_id` (see README)
 
 ## [6.0.0] - 2025-12-17
 

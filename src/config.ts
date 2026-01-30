@@ -68,7 +68,7 @@ export const loadConfig = () => {
     process.env.BLOCKFROST_CONFIG_APPLICATION_NAME ??
     (config.has('dbSync.applicationName')
       ? config.get<string>('dbSync.applicationName')
-      : `blockfrost-backend-ryo@${os.hostname()}`);
+      : `blockfrost-backend-ryo@${os.hostname()}${process.env.NODE_APP_INSTANCE ? `:${process.env.NODE_APP_INSTANCE}` : ''}`);
 
   // blockfrost network
   const network = process.env.BLOCKFROST_CONFIG_NETWORK ?? config.get('network');
